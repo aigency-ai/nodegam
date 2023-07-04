@@ -75,7 +75,7 @@ class NodeGAMBase(object):
             'Invalid objective: ' + str(objective)
 
         if name is None:
-            name = 'tmp_{}.{:0>2d}.{:0>2d}_{:0>2d}:{:0>2d}'.format(*time.gmtime()[:5])
+            name = 'tmp_{}.{:0>2d}.{:0>2d}_{:0>2d}.{:0>2d}'.format(*time.gmtime()[:5])
 
         self.name = name
         self.in_features = in_features
