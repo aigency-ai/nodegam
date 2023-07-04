@@ -84,7 +84,7 @@ class Trainer(nn.Module):
 			raise NotImplementedError()
 
 		if experiment_name is None:
-			experiment_name = 'untitled_{}.{:0>2d}.{:0>2d}_{:0>2d}:{:0>2d}'.format(*time.gmtime()[:5])
+			experiment_name = 'untitled_{}.{:0>2d}.{:0>2d}_{:0>2d}.{:0>2d}'.format(*time.gmtime()[:5])
 			if self.verbose:
 				print('using automatic experiment name: ' + experiment_name)
 
